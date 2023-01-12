@@ -6,7 +6,7 @@ from rbo_weight import rbo_cumulative_weight, rbo_discrete_weight
 
 
 def plot_cumulative_weight() -> None:
-    ps = [0.5, 0.6, 0.8, 0.85, 0.9, 0.95, 0.98, 0.99]
+    ps = [0.5, 0.8, 0.85, 0.9, 0.95, 0.99]
     ds = np.arange(1, 101)
     data = []
     for p in ps:
@@ -26,7 +26,7 @@ def plot_cumulative_weight() -> None:
 
 
 def plot_rank_weight() -> None:
-    ps = [0.5, 0.6, 0.8, 0.85, 0.9, 0.95, 0.98, 0.99]
+    ps = [0.5, 0.8, 0.85, 0.9, 0.95, 0.99]
     ds = np.arange(1, 21)
     data = []
     for p in ps:
