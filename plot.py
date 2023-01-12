@@ -14,6 +14,8 @@ def plot_cumulative_weight() -> None:
             weight = rbo_cumulative_weight(d, p)
             data.append([d, p, weight])
     df = pd.DataFrame(data, columns=["Rank", "RBO P", "Weight"])
+    df2 = df.pivot(index="Rank", columns="RBO P", values="Weight")
+    print(df2.to_markdown())
     df["RBO P"] = df["RBO P"].astype(str)
     g = sns.relplot(kind="line", data=df, x="Rank", y="Weight", hue="RBO P", aspect=2.0)
     g.ax.set_xticks([1] + list(range(5, 101, 5)))
