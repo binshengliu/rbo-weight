@@ -1,5 +1,14 @@
 # RBO Weight
 
+The repository describes the _RBO Weights_ defined in Eq. 19 and Eq. 21 in Sec
+4.3, not the weights used in Eq. 7.
+
+```
+William Webber, Alistair Moffat, and Justin Zobel. "A similarity measure for
+indefinite rankings." ACM Transactions on Information Systems (TOIS) 28.4
+(2010): 1-38.
+```
+
 ## Cumulative Weight
 
 ![Cumulative Weight](cumulative.png)
